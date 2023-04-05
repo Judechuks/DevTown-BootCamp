@@ -8,8 +8,7 @@ In this coding bootcamp, coding skills werelearned and upskilled, with practical
 ## 1. COFFEE MACHINE
 
 ### LINK
-
-&nbsp; &nbsp; **[Coffee Machine](https://docs.google.com/forms/d/e/1FAIpQLSfHVB0OkS9Qvl0iJeQ9dGKIsDfkSsXP_Kl5eGCJXl7enzgRzA/viewform)**
+**[Coffee Machine](https://docs.google.com/forms/d/e/1FAIpQLSfHVB0OkS9Qvl0iJeQ9dGKIsDfkSsXP_Kl5eGCJXl7enzgRzA/viewform)**
 
 ## 2. GOOGLE DRIVE CLONE
 
@@ -19,7 +18,7 @@ For 7 days (from 2/4/2023 to 9/4/2023)
 
 ### LINK
 
-&nbsp; &nbsp; **[Google drive clone]()**
+**[Google drive clone]()**
 
 ### TECHNOLOGY USED IN THE PROJECTS
 
