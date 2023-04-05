@@ -5,8 +5,7 @@ Learning was via youtube at DevTown channel
 For 7 days (from 26/3/2023 to 1/4/2023)
 
 ### LINK
-
-&nbsp; &nbsp; **[Coffee Machine](https://docs.google.com/forms/d/e/1FAIpQLSfHVB0OkS9Qvl0iJeQ9dGKIsDfkSsXP_Kl5eGCJXl7enzgRzA/viewform)**
+**[Coffee Machine](https://docs.google.com/forms/d/e/1FAIpQLSfHVB0OkS9Qvl0iJeQ9dGKIsDfkSsXP_Kl5eGCJXl7enzgRzA/viewform)**
 
 ### TECHNOLOGY USED
 
