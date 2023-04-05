@@ -1,4 +1,4 @@
-## 1. COFFEE MACHINE
+## COFFEE MACHINE
 
 Coffee machine project was done on 2nd April, 2023. 
 Learning was via youtube at DevTown channel
