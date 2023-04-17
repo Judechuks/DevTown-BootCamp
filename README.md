@@ -12,15 +12,17 @@ In this coding bootcamp, coding skills werelearned and upskilled, with practical
 
 ## 2. GOOGLE DRIVE CLONE
 
-Google drive clone was done on 9th April, 2023. 
-Learning was via youtube at DevTown channel
-For 7 days (from 2/4/2023 to 9/4/2023)
+### LINK
+**[Google drive clone](https://805fze.csb.app/)**
+
+## 3. NOTE APP
 
 ### LINK
-
-**[Google drive clone]()**
+**[Note App](https://codesandbox.io/s/smoosh-resonance-uz8ydn)**
 
 ### TECHNOLOGY USED IN THE PROJECTS
 
 #### I. HTML
 #### II. CSS
+#### III. JS
+#### IV. REACT JS
