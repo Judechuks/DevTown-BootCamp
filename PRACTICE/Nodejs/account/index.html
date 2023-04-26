@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Judechuks, 15/9/2022">
+    <title>Login and Registration Form</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="../../../../../JAY CEE/MY WORK/WEB/PROJECT/assets/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="hero">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn login-toggle" >Log in</button>
+          <button type="button" class="toggle-btn register-toggle">Register</button>
+        </div>
+        <div class="social-icons">
+      <a href="https://facebook.com/judechuks.583" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/@Mhizter_JayCee" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com/judechuks_" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com/monye-jude" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <form id="login" class="input-group" action="/" method="post">
+        <input type="text" id="input-field" placeholder="Username" required>
+        <input type="password" id="input-field" placeholder="Password" required>
+        <input type="checkbox" id="check"><label for="check">Remember Password</label>
+        <button type="submit" class="login-btn">log in</button>
+      </form>
+
+      <form id="register" class="input-group" action="/" method="post">
+        <input type="text" name="username" id="input-field" placeholder="Username" required>
+        <input type="email" name="email" id="input-field" placeholder="Email Id" required>
+        <input type="password" name="password-1" id="input-field" placeholder="Enter Password" required>
+        <input type="password" name="password-2" id="input-field" placeholder="Re-Enter Password" required>
+        <input type="checkbox" name="agree-check" id="agree"><label for="agree">I Agree to <a href="#">Terms and Conditions</a></label>
+        <button type="submit" name="submit" class="register-btn">Register</button>
+      </form>
+
+    </div>
+    </div>
+
+</body>
+</html>
