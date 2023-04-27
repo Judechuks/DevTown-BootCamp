@@ -1,114 +1,195 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-  }
-  .hero{
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.4),
-                      rgba(0,0,0,0.4)), 
-                      url("image/nature-1.jpeg");
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-  }
-  .form-box{
-    width: 380px;
-    height: 480px;
-    position: relative;
-    margin: 6% auto;
-    background: #fff;
-    padding: 5px;
-    overflow: hidden;
-  }
-  .button-box{
-    width: 220px;
-    margin: 35px auto;
-    position: relative;
-    box-shadow: 0 0 20px 9px #ff61241f;
-    border-radius: 30px;
-  }
-  .toggle-btn{
-    padding: 10px 30px;
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    outline: none;
-    position: relative;
-    font-weight: 700;
-  }
-  #btn{
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 110px;
-    height: 100%;
-    background: linear-gradient(to right, #ff105f,#ffad06);
-    border-radius: 30px;
-    transition: .5s;
-  }
-  .social-icons{
-    margin: 20px auto;
-    text-align: center;
-  }
-  .social-icons i{
-    width: 30px;
-    font-size: 1.4rem;
-    cursor: pointer;
-  }
-  .social-icons i:first-child, 
-  .social-icons i:nth-child(2){
-    color: blue;
-  }
-  .social-icons i:last-child, 
-  .social-icons i:nth-child(3){
-    color: red;
-  }
-  .input-group{
-    top: 165px;
-    position: absolute;
-    width: 280px;
-    transition: .5s;
-  }
-  #input-field{
-    width: 100%;
-    margin: 5px 0;
-    padding: 10px 0;
-    border: none;
-    outline: none;
-    background: transparent;
-    font-size: 1.05rem;
-    font-weight: 700;
-    border-bottom: 2px solid #ff105f;
-  }
-  label{
-    color: #777;
-  }
-  .login-btn, .register-btn{
-    width: 85%;
-    display: block;
-    position: relative;
-    border-radius: 30px;
-    padding: 10px 30px;
-    background: linear-gradient(to right, #ff105f,#ffad06);
-    margin: auto;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-  #check{
-    margin: 30px 10px 30px 0;
-  }
-  #agree{
-    margin: 20px 10px 20px 0;
-  }
-  #login{
-    left: 50px;
-  }
-  #register{
-    left: 450px;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.hero{
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.4),
+                    rgba(0,0,0,0.4)), 
+                    url("image/nature-1.jpeg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+.form-box{
+  width: 380px;
+  height: 480px;
+  position: relative;
+  margin: 6% auto;
+  background: #fff;
+  padding: 5px;
+  overflow: hidden;
+}
+.button-box{
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #ff61241f;
+  border-radius: 30px;
+}
+.toggle-btn{
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  font-weight: 700;
+}
+#btn{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right, #ff105f,#ffad06);
+  border-radius: 30px;
+  transition: .5s;
+}
+.social-icons{
+  margin: 20px auto;
+  text-align: center;
+}
+.social-icons i{
+  width: 30px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.social-icons i:first-child, 
+.social-icons i:nth-child(2){
+  color: blue;
+}
+.social-icons i:last-child, 
+.social-icons i:nth-child(3){
+  color: red;
+}
+.input-group{
+  top: 165px;
+  position: absolute;
+  width: 280px;
+  transition: .5s;
+}
+#input-field{
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-bottom: 2px solid #ff105f;
+}
+label{
+  color: #777;
+}
+.login-btn, .register-btn{
+  width: 85%;
+  display: block;
+  position: relative;
+  border-radius: 30px;
+  padding: 10px 30px;
+  background: linear-gradient(to right, #ff105f,#ffad06);
+  margin: auto;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#check{
+  margin: 30px 10px 30px 0;
+}
+#agree{
+  margin: 20px 10px 20px 0;
+}
+#login{
+  left: 50px;
+}
+#register{
+  left: 450px;
+}
+
+/*======== LOGIN PAGE ========*/
+.logged-in,
+.registered{
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  position: absolute;
+  top: 0;
+}
+.logged-in{
+  background-image: linear-gradient(rgba(0,0,0,0.4),
+                    rgba(0,0,0,0.4)), 
+                    url("image/nature-1.jpeg");
+  background-size: cover;
+}
+.logged-in .msg-container,
+.registered .msg-container{
+  height: 280px;
+  width: 280px;
+  background-color: #efefef;
+  position: absolute;
+  top: calc(50% - 140px);
+  left: calc(50% - 140px);
+  border-radius: 2px;
+  box-shadow: 0 0 10px 3px black;
+}
+.msg-container .icon{
+  display: flex;
+  justify-content: space-between;
+}
+.msg-container .fa-info{
+  padding: 15px 20px;
+  margin: 10px;
+  color: #fff;
+  background: #1877F2;
+  border-radius: 50%;
+}
+.msg-container .fa-times{
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: fit-content;
+  cursor: pointer;
+}
+.msg-container h1{
+  text-align: center;
+  margin: 15px auto;
+}
+.msg-container p{
+  text-align: center;
+  line-height: 22px;
+}
+.msg-container button{
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 6px 26px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 3px black;
+  background: #1877F2;
+  color: #fff;
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+/*======== REGISTERED PAGE ========*/
+.registered{
+  background-image: linear-gradient(rgba(0,0,0,0.4),
+                    rgba(0,0,0,0.4)), 
+                    url("image/Dog-Thank-you.jpeg");
+  background-size: contain;
+}
+.registered h1{
+  margin-top: -10px;
+}
+.close{
+  display: none;
+}
