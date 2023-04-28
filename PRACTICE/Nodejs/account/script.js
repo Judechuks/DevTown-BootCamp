@@ -1,17 +1,12 @@
-const login = document.getElementById("login");
-const register = document.getElementById("register");
-const registerBtn = document.querySelector(".register-toggle");
-const loginBtn = document.querySelector(".login-toggle");
+// LOGIN & REGISTION SUCCESSFUL
+const modal = document.getElementById("modal");
+const closeBtn = document.getElementById("okBtn");
+const closeX = document.querySelector(".closeX");
 
-const btn = document.getElementById("btn");
-
-registerBtn.addEventListener("click", function(){
-  login.style.left = `-400px`;
-  register.style.left = `50px`;
-  btn.style.left = `110px`;
+closeBtn.addEventListener("click", function(){
+  modal.style.display = "none";
 });
-loginBtn.addEventListener("click", function(){
-  login.style.left = `50px`;
-  register.style.left = `450px`;
-  btn.style.left = `0`;
+
+closeX.addEventListener("click", function(){
+  modal.style.display = "none";
 });
