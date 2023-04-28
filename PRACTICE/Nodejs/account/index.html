@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../../../../../JAY CEE/MY WORK/WEB/PROJECT/assets/fontawesome-free-6.1.1-web/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="hero">
@@ -45,5 +44,24 @@
     </div>
     </div>
 
+<script>
+  const login = document.getElementById("login");
+  const register = document.getElementById("register");
+  const registerBtn = document.querySelector(".register-toggle");
+  const loginBtn = document.querySelector(".login-toggle");
+
+  const btn = document.getElementById("btn");
+
+  registerBtn.addEventListener("click", function(){
+    login.style.left = `-400px`;
+    register.style.left = `50px`;
+    btn.style.left = `110px`;
+  });
+  loginBtn.addEventListener("click", function(){
+    login.style.left = `50px`;
+    register.style.left = `450px`;
+    btn.style.left = `0`;
+  });
+</script>
 </body>
 </html>
