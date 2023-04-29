@@ -1,7 +1,7 @@
 ## MOTE FROM DEVTOWN BOOTCAMP
 The coding platform used was **replit** (website/software). 
 You can access replit using mobile phones and it gives you the advantage of hosting/deploying your codes.
-Repl is where you write and run the codes (nodejs). gives you access to shell, terminal, text editor, etc.
+Repl (Read evaluation Print Loop) is where you write and run the codes (nodejs). gives you access to shell, terminal, text editor, etc.
 When you are in the terminal, you can exit the terminal by pressing ctrl + c twice, or ctrl + D, or type exit and press enter on the keyboard.
 Note taken from 20/4/2023
 
