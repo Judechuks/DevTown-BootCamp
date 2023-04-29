@@ -1,5 +1,9 @@
 ## MOTE FROM DEVTOWN BOOTCAMP
-The coding platform used was **replit**
+The coding platform used was **replit** (website/software). 
+You can access replit using mobile phones and it gives you the advantage of hosting/deploying your codes.
+Repl is where you write and run the codes (nodejs). gives you access to shell, terminal, text editor, etc.
+When you are in the terminal, you can exit the terminal by pressing ctrl + c twice, or ctrl + D, or type exit and press enter on the keyboard.
+Note taken from 20/4/2023
 
 ---
 
@@ -81,3 +85,70 @@ But the server can not execute a get request. Then write a code for the get func
 `App.get("/", function(req, res){
 `  res.send("Hello World!");
 `});
+
+To avoid always restarting the server for the new code written to be executed, we use "nodemon" (npm package) which we have to install the terminal by running the following code:
+
+`npm install -g nodemon
+
+-g means global installation for the local computer and all folder (c://)
+Then run index.js using the nodemon instead of node in the terminal
+
+`nodemon index.js
+
+The nodemon is like the 'live server' extention in VS Code
+
+Still in the index.js file
+
+`App.get("/about", function(req, res){
+`  res.send("Welcome, This is the about section");
+`});
+
+**NOTE:** instead of sending a message, you can send a file (index.html) in your index.js file by:
+
+`App.get("/", function(req, res){
+`  res.sendFile(__dirname + "/index.html");
+`});
+
+The __dirname sends the computer's directory and concatenates it with the /filename.extention, which will then give you the correct path to the file and the file to send as the resonse.
+
+---
+
+### POST REQUEST AND GET REQUEST
+When you are trying to open a page, it is a get request. (e.g google.com).
+When you are sending data to the server, it is known as post request.
+When you try to post a request without writing the post request code, it will generate error "Cannot POST /" similarly when you try to get "Cannot GET /" 
+
+#### Http Status Code
+1xx (101, 102, 103, 104, etc) means hold on, page is loading.
+2xx (201, 202, 203, 204, etc) means ready, here you go.
+3xx (301, 302, 303, 304, etc) means go away, you are not allowed.
+4xx (401, 402, 403, 404, etc) means mistake from you. (request doesn't exist).
+5xx (501, 502, 503, 504, etc) means mistake from the backend.
+
+**Post Method and Request** (After the get request)
+`App.post("/", function(req, res){
+`  res.send("Submitted Successfully!");
+`});
+
+#### BodyParser
+Go to the npm and install body parser via the terminal
+
+`npm install body parser
+
+In index.js file, type:
+
+`const bodyParser = require('body-parser');
+`App.use(bodyParser.urlencoded({extended:true}));
+
+Which will encode the request, and we can now access the request through bodyParser() method.
+The previous post request now rewritten as:
+
+`App.post("/", function(req, res){
+`  var num1 = Number(req.body.n1); // from body parser
+`  var num2 = Number(req.body.n2); // from body parser
+`  var result = num1 + num2;
+`  res.send("The result of your calculation is "+ result);
+`});
+
+**NOTE:**
+n1 and n2 is a value of the name attribute in input field of the index.html file. which will contain a value when the user submits the form
