@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../../../../JAY CEE/MY WORK/WEB/PROJECT/assets/fontawesome-free-6.1.1-web/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
     <div class="hero">
@@ -26,19 +27,21 @@
       <a href="https://linkedin.com/monye-jude" target="_blank"><i class="fab fa-linkedin"></i></a>
       </div>
       <form id="login" class="input-group" action="/" method="post">
-        <input type="text" id="input-field" placeholder="Username" required>
-        <input type="password" id="input-field" placeholder="Password" required>
-        <input type="checkbox" id="check"><label for="check">Remember Password</label>
-        <button type="submit" class="login-btn">log in</button>
+        <input type="text" name="login_user" id="input-field" placeholder="Username" required>
+        <input type="password" name="login_pass" id="input-field" placeholder="Password" required>
+        <input type="checkbox" name="login_checkbox" id="check"><label for="check">Remember Password</label>
+        <button type="submit" name="login-submit" class="login-btn">log in</button>
+        <p id="login_msg"></p>
       </form>
 
-      <form id="register" class="input-group" action="/" method="post">
+      <form id="register" class="input-group" action="/form2" method="post">
         <input type="text" name="username" id="input-field" placeholder="Username" required>
         <input type="email" name="email" id="input-field" placeholder="Email Id" required>
-        <input type="password" name="password-1" id="input-field" placeholder="Enter Password" required>
-        <input type="password" name="password-2" id="input-field" placeholder="Re-Enter Password" required>
-        <input type="checkbox" name="agree-check" id="agree"><label for="agree">I Agree to <a href="#">Terms and Conditions</a></label>
+        <input type="password" name="password1" id="input-field" placeholder="Enter Password" required>
+        <input type="password" name="password2" id="input-field" placeholder="Re-Enter Password" required>
+        <input type="checkbox" name="agree_check" id="agree"><label for="agree">I Agree to <a href="#">Terms and Conditions</a></label>
         <button type="submit" name="submit" class="register-btn">Register</button>
+        <p id="msg"></p>
       </form>
 
     </div>
