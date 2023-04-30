@@ -15,7 +15,7 @@
 }
 .form-box{
   width: 380px;
-  height: 480px;
+  min-height: 500px;
   position: relative;
   margin: 6% auto;
   background: #fff;
@@ -189,4 +189,13 @@ label{
 }
 .registered h1{
   margin-top: -10px;
+}
+#msg,
+#login_msg{
+  color: rgb(194, 18, 18);
+  text-align: center;
+  margin-top: 10px;
+}
+#login_msg{
+  margin-top: 20px;
 }
